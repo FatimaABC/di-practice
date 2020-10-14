@@ -1,9 +1,6 @@
 package com.spring.di;
 
-import com.spring.di.controller.ConstructorInjectedController;
-import com.spring.di.controller.MyController;
-import com.spring.di.controller.PropertyInjectedController;
-import com.spring.di.controller.SetterInjectedController;
+import com.spring.di.controller.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -14,9 +11,16 @@ public class DiApplication {
     public static void main(String[] args) {
 
         ApplicationContext ctx = SpringApplication.run(DiApplication.class, args);
+        PetController petController = (PetController) ctx.getBean("petController");
+        System.out.println(petController.whichPetIsTheBest());
+
+        I18nController i18nController = (I18nController) ctx.getBean("i18nController");
+        System.out.println(i18nController.sayGreeting());
+
         MyController myController = (MyController) ctx.getBean("myController");
-        String greeting = myController.sayHello();
-        System.out.println(greeting);
+        System.out.println("----------------- Primary");
+        System.out.println(myController.sayHello());
+
         System.out.println("----------------- property");
 
         PropertyInjectedController propertyInjectedController = (PropertyInjectedController) ctx.getBean("propertyInjectedController");
