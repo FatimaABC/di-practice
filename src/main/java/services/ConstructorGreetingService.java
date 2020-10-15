@@ -1,6 +1,5 @@
-package com.spring.di.services;
+package services;
 
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 @Service

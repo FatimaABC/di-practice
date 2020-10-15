@@ -1,4 +1,4 @@
-package com.spring.di.services;
+package services;
 
 import org.springframework.stereotype.Controller;
 

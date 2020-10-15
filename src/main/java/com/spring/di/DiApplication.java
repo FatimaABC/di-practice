@@ -4,8 +4,11 @@ import com.spring.di.controller.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"services", "com.spring.di"})
 public class DiApplication {
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.spring.di.services;
+package services;
 
 public interface GreetingService {
     String sayGreeting();

@@ -1,6 +1,6 @@
 package com.spring.di.controller;
 
-import com.spring.di.services.ConstructorGreetingService;
+import services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
