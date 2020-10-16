@@ -1,0 +1,5 @@
+chanel:
+  jms:
+    user: JMS user
+    password: somepass
+    dburl: some url
