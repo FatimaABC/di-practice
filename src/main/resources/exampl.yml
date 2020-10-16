@@ -1,0 +1,31 @@
+# here goes a comment
+
+name: John
+names:
+  -Jhon
+  -Paul
+  -Ringo
+pound_sign: "#"
+
+book:
+  author: Joe Buck
+  publisher: random house
+truth: yes
+another_truth: True
+more_truth: true
+false: no #No, false,False
+string_val: "This is it's qoute"
+colon_string: " joo ppopo: jpojpoj jpoj pojp"
+include_new_lines: |
+  hello
+  there
+  are
+  many
+
+  new
+  lines
+ignore_new_line: >
+  so here new lines are
+  ignored
+  totally
+
