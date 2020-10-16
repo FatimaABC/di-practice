@@ -2,6 +2,7 @@ package com.spring.di;
 
 import com.spring.di.controller.*;
 import com.spring.di.examplebeans.FakeDataSource;
+import com.spring.di.examplebeans.FakeJmsSource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -16,7 +17,8 @@ public class DiApplication {
 
         FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
         System.out.println(fakeDataSource.getUser());
-
+        FakeJmsSource fakeJmsSource = (FakeJmsSource) ctx.getBean(FakeJmsSource.class);
+        System.out.println(fakeJmsSource.getUser());
     }
 
 }
